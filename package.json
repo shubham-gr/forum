@@ -1,12 +1,16 @@
 {
-  "name": "forum",
-  "version": "0.0.0",
-  "private": true,
+  "name": "dbchat",
+  "version": "0.0.1",
+  "description": "chat with history app",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node index.js"
   },
   "dependencies": {
-    "async": "*",
+"async": "*",
     "bcrypt-nodejs": "*",
     "express-flash": "*",
     "express-session": "*",
@@ -23,6 +27,12 @@
     "morgan": "*",
     "passport": "*",
     "passport-local": "*",
-    "serve-favicon": "*"
+    "serve-favicon": "*",
+    "socket.io":"*",
+    "flash":"*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shubham-gr/chat"
   }
 }
